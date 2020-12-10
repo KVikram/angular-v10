@@ -1,0 +1,11 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "HookyQR.beautify",
+    "html.format.indentHandlebars": true,
+    "html.format.indentInnerHtml": true,
+    "nxConsole.enableTelemetry": false,
+    "telemetry.enableTelemetry": false,
+    "telemetry.enableCrashReporter": false,
+    "html.format.wrapAttributes": "force-aligned",
+    "html.format.wrapLineLength": 200
+}
