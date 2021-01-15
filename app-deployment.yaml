@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: angular-v10-deployment
+spec:
+  selector: 
+    matchLabels: 
+      app: angular-v10
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app : angular-v10
+    spec:
+      containers:
+        - name: angular-v10
+          image: localhost1270/angular-v10-app:v1
+          imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: 1
+              memory: 512M
+            requests:
+              cpu: 1
+              memory: 256M
+          ports:
+          - containerPort: 80
