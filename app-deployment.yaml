@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: angular-v10
-          image: localhost1270/angular-v10-app:v1
+          image: eu.gcr.io/k8-starter/angular-v10-app:latest
           imagePullPolicy: Always
           resources:
             limits:
