@@ -10,15 +10,40 @@
       <a
         mat-list-item
         [routerLink]="['/home']"
+        (click)="drawer.toggle()"
         routerLinkActive="router-link-active"
         >Dashboard
       </a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a
+        mat-list-item
+        [routerLink]="['/tree']"
+        (click)="drawer.toggle()"
+        routerLinkActive="router-link-active"
+        >Mat Tree
+      </a>
+      <a
+        mat-list-item
+        [routerLink]="['/address']"
+        (click)="drawer.toggle()"
+        routerLinkActive="router-link-active"
+        >Mat form fields
+      </a>
+      <a
+        mat-list-item
+        [routerLink]="['/table']"
+        (click)="drawer.toggle()"
+        routerLinkActive="router-link-active"
+        >Mat Table
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar
+      color="primary"
+      fxLayout="row"
+      fxLayoutAlign="start center"
+      fxLayoutGap="15px"
+    >
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -27,9 +52,16 @@
       >
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Angular v10 sample</span>
+      <button
+        mat-button
+        [routerLink]="['/home']"
+        routerLinkActive="router-link-active"
+      >
+        Home
+      </button>
+      <span>Angular v{{ ngVersion }} sample</span>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <app-home></app-home>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

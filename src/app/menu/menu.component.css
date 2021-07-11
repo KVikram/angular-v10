@@ -1,6 +1,6 @@
-/* .sidenav-container {
+.sidenav-container {
   height: 100%;
-} */
+}
 
 .sidenav {
   width: 200px;
@@ -15,3 +15,4 @@
   top: 0;
   z-index: 1;
 }
+
