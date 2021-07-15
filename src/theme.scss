@@ -2,6 +2,7 @@
 
 @include mat.core();
 
+// Define custom font families for typography styles
 $my-typography: mat.define-typography-config(
     $font-family: '"Source Code Pro", monospace;',
   );
@@ -34,11 +35,11 @@ $dark-theme: mat.define-dark-theme((
 
 
 
-
+// By default it will use the light theme
  @include mat.all-component-themes($light-theme);
 
 
-
+// If you want to use the dark theme, just add the .mat-dark-theme clas
 .my-dark-theme {
   @include mat.all-component-colors($dark-theme);
 }
