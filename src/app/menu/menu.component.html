@@ -60,6 +60,10 @@
         Home
       </button>
       <span>Angular v{{ ngVersion }} sample</span>
+      <span class="spacer"></span>
+      <mat-slide-toggle color="accent" (click)="toggleDarkMode()">
+        <mat-icon>{{ isDarkModeOn ? "light_mode" : "dark_mode" }}</mat-icon>
+      </mat-slide-toggle>
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>

@@ -7,7 +7,7 @@
     fxLayoutGap="15px grid"
   >
     <div *ngFor="let card of cards | async" fxFlex="30%" fxFlex.lt-md="90%">
-      <mat-card>
+      <mat-card cdkDrag>
         <mat-card-header>
           <mat-card-title>
             {{ card.title }}
@@ -29,7 +29,7 @@
           <div *ngIf="card.title === 'Card 1'">
             <a
               mat-stroked-button
-              color="primary"
+              color="accent"
               [routerLink]="['/table']"
               routerLinkActive="router-link-active"
               >Mat Table
@@ -38,7 +38,7 @@
           <div *ngIf="card.title === 'Card 2'">
             <a
               mat-stroked-button
-              color="primary"
+              color="accent"
               [routerLink]="['/address']"
               routerLinkActive="router-link-active"
               >Mat form fields
@@ -47,7 +47,7 @@
           <div *ngIf="card.title === 'Card 3'">
             <a
               mat-stroked-button
-              color="primary"
+              color="accent"
               [routerLink]="['/tree']"
               routerLinkActive="router-link-active"
               >Mat Tree
