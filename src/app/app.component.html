@@ -1,1 +1,3 @@
-<app-menu></app-menu>
+<app-menu
+  [ngClass]="{ 'my-dark-theme': sharedSvc.isDarkMode | async }"
+></app-menu>

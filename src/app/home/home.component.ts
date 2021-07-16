@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
+
 
 @Component({
   selector: 'app-home',
@@ -30,4 +32,6 @@ export class HomeComponent {
   );
 
   constructor(private breakpointObserver: BreakpointObserver) { }
+
+
 }
