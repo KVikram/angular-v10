@@ -27,8 +27,6 @@ export class MenuComponent {
   toggleDarkMode() {
     this.isDarkModeOn = !this.isDarkModeOn;
     this.sharedSvc.isDarkMode$.next(this.isDarkModeOn);
-    console.log(this.isDarkModeOn);
-
   }
 
 }
