@@ -24,7 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddressComponent } from './address/address.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { BannerComponent, HomeComponent } from './home/home.component';
 import { MatTableComponent } from './mat-table/mat-table.component';
 import { MatTreeComponent } from './mat-tree/mat-tree.component';
 import { MenuComponent } from './menu/menu.component';
@@ -36,7 +36,8 @@ import { MenuComponent } from './menu/menu.component';
     MenuComponent,
     MatTreeComponent,
     MatTableComponent,
-    AddressComponent
+    AddressComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

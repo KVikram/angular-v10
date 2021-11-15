@@ -65,6 +65,12 @@
         <mat-icon>{{ isDarkModeOn ? "light_mode" : "dark_mode" }}</mat-icon>
       </mat-slide-toggle>
     </mat-toolbar>
+    <div
+      [@openClose]="isDarkModeOn ? 'open' : 'closed'"
+      class="open-close-container"
+    >
+      <p>The theme is now {{ isDarkModeOn ? "Dark" : "Light" }}!</p>
+    </div>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
   </mat-sidenav-content>

@@ -35,3 +35,9 @@ export class HomeComponent {
 
 
 }
+
+@Component({
+  selector: 'app-banner',
+  templateUrl: './banner.component.html'
+})
+export class BannerComponent { }
